@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right bottom, #051937, #102557, #292f76, #4a3794, #713aaf);
+    padding: 10px;
+}
+
+.to-do-app{
+    width: 100px;
+    min-width: 540px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    h2{
+        color: #051937;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 15px 50px;
+    background-color: #102557;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #713aaf;
+}
+
+/* .list-container{
+    max-width: 100%;
+} */
+
+.task-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+}
+
+.task{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 12px 30px;
+}
+
+ul li{
+    flex: 1;
+    list-style: none;
+    font-size: 17px;
+}
+
+i{
+    margin: 0px 10px;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: #102557;
+}
+
+.fa-x:hover{
+    color: #713aaf;
+}
+
+.checked{
+    color: rgb(132, 132, 132);
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 850px) {
+    .to-do-app{
+      width: fit-content;
+      min-width: 350px ;
+      margin: 100px auto 20px;
+    }
+  }
